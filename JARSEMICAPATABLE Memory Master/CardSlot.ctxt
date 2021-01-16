@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.target=CardSlot
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ CardSlot\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=n
+comment1.target=CardSlot(Card)
+comment2.params=
+comment2.target=boolean\ isRight()
+comment3.params=
+comment3.target=boolean\ mouseOver()
+comment4.params=
+comment4.target=boolean\ clicked()
+comment5.params=
+comment5.target=void\ act()
+numComments=6

@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.target=RankingBoard
+comment0.text=\r\n\ The\ room\ where\ the\ top\ 10\ players\ are\ shown\ used\ a\ recursive\ merge\ sort\ algorithem\ to\ sort\ the\ players\ inversly\ by\ their\ score\r\n\ @author\ (Darcy\ Liu)\ \r\n\ @version\ (6/8/2019)\r\n
+comment1.params=
+comment1.target=RankingBoard()
+comment2.params=
+comment2.target=void\ drawBoard()
+comment2.text=\r\n\ THe\ method\ that\ takes\ the\ drawBoard\ \r\n
+comment3.params=
+comment3.target=void\ act()
+comment4.params=arr
+comment4.target=void\ mergeSort(java.util.Vector)
+comment4.text=\r\n\ The\ merge\ sort\ algorithem\ the\ recursive\ sort\ part\ of\ the\ programm\ \r\n\ which\ sorts\ a\ vector\ of\ players\r\n
+comment5.params=arr\ aux\ left\ right
+comment5.target=void\ mergeSort(java.util.Vector,\ java.util.Vector,\ int,\ int)
+comment6.params=arr\ aux\ left\ mid\ right
+comment6.target=void\ merge(java.util.Vector,\ java.util.Vector,\ int,\ int,\ int)
+numComments=7

@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=BunchOfCards
+comment0.text=\r\n\ WA\ picture\ that\ shows\ at\ the\ beginning\ of\ the\ game\r\n\ \r\n\ @author\ (Mercedes)\ \r\n\ @version\ (June\ 2019)\r\n
+comment1.params=
+comment1.target=BunchOfCards()
+comment1.text=\r\n\ Act\ -\ do\ whatever\ the\ BunchOfCards\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
+comment2.params=
+comment2.target=void\ act()
+numComments=3

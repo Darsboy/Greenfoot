@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=Card
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Card\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=rank\ suit
+comment1.target=Card(int,\ int)
+comment2.params=
+comment2.target=boolean\ isDragged()
+comment3.params=p
+comment3.target=boolean\ equals(Card)
+comment4.params=
+comment4.target=boolean\ mouseOver()
+comment4.text=\r\n\ \ \ \ public\ void\ act()\ \r\n\ \ \ \ {\r\n\ \ \ \ MouseInfo\ mouse\=\ Greenfoot.getMouseInfo();\r\n\ \ \ \ if(Greenfoot.mousePressed(this))\ drag\ \=\ true;\r\n\ \ \ \ if(Greenfoot.mouseClicked(null))\ drag\ \=\ false;\r\n\r\n\ \ \ \ if(drag)\ {\r\n\ \ \ \ setLocation(mouse.getX(),mouse.getY());\r\n\ \ \ \ }\r\n\ \ \ \ }\ \ \ \ \r\n
+comment5.params=
+comment5.target=boolean\ clicked()
+comment6.params=
+comment6.target=void\ act()
+numComments=7

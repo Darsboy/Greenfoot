@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.target=Intofile
+comment1.params=
+comment1.target=void\ loadPlayers()
+comment2.params=
+comment2.target=void\ savePlayers()
+comment2.text=\r\n\ the\ method\ that\ updates\ the\ file\ with\ the\ map\r\n
+comment3.params=
+comment3.target=void\ getPlayer()
+comment3.text=\r\n\ the\ method\ that\ uses\ J\ option\ pane\ to\ get\ the\ player\ once\ someone\ loade\r\n
+comment4.params=
+comment4.target=void\ newPlayer()
+comment4.text=\r\n\ Make\ a\ new\ player\ with\ J\ option\ pane\ input\r\n
+numComments=5

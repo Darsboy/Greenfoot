@@ -1,0 +1,135 @@
+/**
+ * Write a description of class Intofile here.
+ * 
+ * @author (your name) 
+ * @version (a version number or a date)
+ */
+import java.io.*;
+import javax.swing.JOptionPane;
+import java.util.*;
+import javax.swing.*;
+import java.awt.BorderLayout;
+import java.awt.GridLayout;
+public class Intofile  
+{
+    // instance variables - replace the example below with your own
+    private int x;
+    public static Player currentPlaying=null;
+    static HashMap<String,Player> usernametoPlayer=new HashMap<String,Player>();
+
+    /**
+     * Constructor for objects of class Intofile
+     */
+    public Intofile()
+    {
+    }
+
+    /**
+     * An example of a method - replace this comment with your own
+     * 
+     * @param  y   a sample parameter for a method
+     * @return     the sum of x and y 
+     */
+    public static void loadPlayers()
+    {
+        Reader read=new Reader();
+        usernametoPlayer=read.getTextInput("file.txt");
+    }
+
+    public static void savePlayers()
+    {
+        // where you save:
+
+        // 1) setup:
+        // I don't know for sure if the file specified here has to already exist, you may need to research on that.
+        try {
+            BufferedWriter bw = new BufferedWriter(new FileWriter("file.txt"));
+
+            // 2) Create data to store
+
+            // 3) Actually store the data.
+            // You can do this by doing this:
+            for(String k:usernametoPlayer.keySet()){
+                bw.write(k+"\n");
+                bw.newLine();
+
+                bw.write(usernametoPlayer.get(k).password+"\n");
+                bw.newLine();
+
+                bw.write(usernametoPlayer.get(k).score+"\n");
+                bw.newLine();
+            }
+            // for every line to save. Replace <string to save> with a String to save in the file.
+
+            // 4) Close it:
+            bw.close();
+        } catch (Exception e) {
+            System.err.println("Error: "+e.getMessage());
+        }
+    }  
+
+    /*
+    public static void getPlayer(){
+    // a jframe here isn't strictly necessary, but it makes the example a little more real
+    JFrame frame = new JFrame("InputDialog Example #1");
+
+    // prompt the user to enter their name
+    String name = JOptionPane.showInputDialog(frame, "Username");
+    String Password = JOptionPane.showInputDialog(frame, "Password");
+    if(usernametoPlayer.containsKey(name)&&Password.equals(usernametoPlayer.get(name).password)  ){
+    currentPlaying=usernametoPlayer.get(name);
+    }
+    // get the user's input. note that if they press Cancel, 'name' will be null
+
+    }
+     */
+
+    public static void getPlayer(){
+        JFrame frame=new JFrame();
+        JPanel panel = new JPanel(new BorderLayout(5, 5));
+        JPanel label = new JPanel(new GridLayout(0, 1, 2, 2));
+        label.add(new JLabel("Username", SwingConstants.RIGHT));
+        label.add(new JLabel("Password", SwingConstants.RIGHT));
+        panel.add(label, BorderLayout.WEST);
+
+        JPanel controls = new JPanel(new GridLayout(0, 1, 2, 2));
+        JTextField username = new JTextField();
+        controls.add(username);
+        JPasswordField password = new JPasswordField();
+        controls.add(password);
+        panel.add(controls, BorderLayout.CENTER);
+
+        //JOptionPane.showMessageDialog(frame, panel, "login", JOptionPane.QUESTION_MESSAGE);
+
+        JOptionPane.showConfirmDialog(frame, panel, "login", JOptionPane.OK_CANCEL_OPTION);
+
+        String name = username.getText();
+        String Password = new String(password.getPassword());
+        
+        if(usernametoPlayer.containsKey(name)&&Password.equals(usernametoPlayer.get(name).password)){
+            currentPlaying=usernametoPlayer.get(name);
+        }else  if(usernametoPlayer.containsKey(name)&&!Password.equals(usernametoPlayer.get(name).password)){
+            
+            currentPlaying=usernametoPlayer.get(name);
+            
+        }
+        
+        
+    }
+
+    public static void newPlayer(){
+
+        JFrame frame = new JFrame("InputDialog Example #1");
+        // prompt the user to enter their name
+        String name = JOptionPane.showInputDialog(frame, "Username");
+
+        if(usernametoPlayer.containsKey(name)){
+            JOptionPane.showMessageDialog(frame, "Username Taken");
+            return;
+        }
+        String Password = JOptionPane.showInputDialog(frame, "Password");
+        currentPlaying=new Player(name,Password,0);
+        usernametoPlayer.put(name,currentPlaying);
+
+    }
+}

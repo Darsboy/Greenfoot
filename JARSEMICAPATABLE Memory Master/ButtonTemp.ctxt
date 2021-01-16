@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=ButtonTemp
+comment0.text=\r\n\ The\ template\ for\ all\ buttons\ that\ is\ going\ to\ be\ created\ where\ all\ buttons\ must\:\r\n\ -have\ two\ images\ when\ mouse\ hovers\ over\ it\ shows\ one\ image\ while\ anouther\ while\ the\ pointer\ is\ not\ over\r\n\ -make\ a\ beep\ sound\ when\ mouse\ hovers\ over\r\n\ -The\ images\ are\ constructors\ to\ the\ class\ so\ it's\ subclasses\ are\ other\ button\ that\ will\ lead\ to\ other\ rooms\r\n\ All\ subclasses\ are\ made\ by\ the\ same\ author\ only\ differing\ by\ images\r\n\ which\ serve\ as\ access-points\ to\ different\ rooms\r\n\ @author\ (Darcy\ Liu)\ \r\n\ @version\ (6/8/2019)\r\n
+comment1.params=img1\ img2\ sn
+comment1.target=ButtonTemp(greenfoot.GreenfootImage,\ greenfoot.GreenfootImage,\ double)
+comment2.params=
+comment2.target=boolean\ mouseOver()
+comment3.params=
+comment3.target=boolean\ clicked()
+comment4.params=
+comment4.target=boolean\ mouseDownSec()
+comment5.params=
+comment5.target=void\ actOld()
+comment5.text=\r\n\ \ \ \ public\ boolean\ clicked(){\r\n\ \ \ \ return\ this.getWorld()\!\=null&&Greenfoot.mouseClicked(this);\r\n\ \ \ \ }\r\n
+comment6.params=
+comment6.target=void\ act()
+numComments=7

@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=TitleScreen
+comment0.text=\r\n\ The\ screen\ that\ appears\ when\ the\ game\ opens\r\n\ \r\n\ @author\ (Mercedes)\ \r\n\ @version\ (May\ 2019)\r\n
+comment1.params=
+comment1.target=TitleScreen()
+comment2.params=
+comment2.target=void\ act()
+numComments=3

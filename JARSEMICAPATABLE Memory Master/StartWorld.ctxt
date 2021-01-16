@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=StartWorld
+comment0.text=\r\n\ In\ this\ world\ the\ player\ will\ login\ and\ start\ the\ game.\r\n\ Also\ the\ images\ for\ the\ cards\ are\ also\ initiated\ here\r\n\ \r\n\ @author\ (Darcy\ Liu)\ \r\n\ @version\ (6/6/2019)\r\n
+comment1.params=
+comment1.target=StartWorld()
+comment2.params=rank\ suit
+comment2.target=greenfoot.GreenfootImage\ getCardImage(int,\ int)
+comment3.params=
+comment3.target=void\ initiateCards()
+comment4.params=str
+comment4.target=boolean\ isNumber(java.lang.String)
+comment5.params=
+comment5.target=void\ act()
+comment6.params=
+comment6.target=void\ prepare()
+comment6.text=\r\n\ Prepare\ the\ world\ for\ the\ start\ of\ the\ program.\r\n\ That\ is\:\ create\ the\ initial\ objects\ and\ add\ them\ to\ the\ world.\r\n
+numComments=7
